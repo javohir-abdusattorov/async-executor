@@ -9,7 +9,7 @@ use std::{
     task::Context,
     time::Duration,
 };
-use timer_future::TimerFuture;
+use async_executor::TimerFuture;
 
 struct Executor {
     ready_queue: Receiver<Arc<Task>>,
